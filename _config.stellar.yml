@@ -1,0 +1,94 @@
+logo:
+  avatar: '[https://github.com/nian1123.png](/about/)'
+  title: '[念一的博客](/)'
+  subtitle: 记录技术、阅读与生活
+
+menubar:
+  columns: 4
+  items:
+    - id: post
+      theme: '#1BCDFC'
+      icon: solar:documents-bold-duotone
+      title: 博客
+      url: /
+    - id: archive
+      theme: '#3DC550'
+      icon: solar:archive-minimalistic-bold-duotone
+      title: 归档
+      url: /archives/
+    - id: tag
+      theme: '#FA6400'
+      icon: solar:hashtag-square-bold-duotone
+      title: 标签
+      url: /tags/
+    - id: about
+      theme: '#F44336'
+      icon: solar:user-circle-bold-duotone
+      title: 关于
+      url: /about/
+
+site_tree:
+  home:
+    leftbar: ghuser, recent
+    rightbar: tagcloud
+  index_blog:
+    menu_id: post
+    leftbar: ghuser, recent
+    rightbar: tagcloud
+    nav_tabs:
+      最近发布: /
+      分类: /categories/
+      标签: /tags/
+      归档: /archives/
+      关于: /about/
+  post:
+    menu_id: post
+    leftbar: recent
+    rightbar: toc
+  page:
+    leftbar: recent
+    rightbar: toc
+  error_page:
+    menu_id: post
+    '404': /404.html
+    leftbar: recent
+    rightbar: tagcloud
+
+article:
+  type: tech
+  auto_excerpt: 160
+  license: 本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+  share:
+    - link
+    - wechat
+    - weibo
+
+footer:
+  social:
+    github:
+      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/>'
+      url: https://github.com/nian1123
+  sitemap:
+    - title: 博客
+      items:
+        - '[最近发布](/)'
+        - '[分类](/categories/)'
+        - '[标签](/tags/)'
+        - '[归档](/archives/)'
+    - title: 关于
+      items:
+        - '[关于我](/about/)'
+        - '[GitHub](https://github.com/nian1123)'
+  content: |
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
+    内容以技术、周刊与长期写作为主。
+
+search:
+  service: local_search
+  local_search:
+    field: all
+    path: /search.json
+    content: true
+
+comments:
+  service:

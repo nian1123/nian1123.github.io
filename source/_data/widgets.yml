@@ -1,0 +1,25 @@
+ghuser:
+  layout: ghuser
+  username: nian1123
+  avatar: true
+
+recent:
+  layout: recent
+  limit: 8
+
+tagcloud:
+  layout: tagcloud
+  title: 常用标签
+  min_font: 12
+  max_font: 20
+  amount: 30
+  orderby: name
+  order: 1
+  color: false
+
+toc:
+  layout: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 3
+  collapse: false
