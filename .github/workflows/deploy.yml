@@ -36,7 +36,16 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: ./node_modules/.bin/hexo generate
+        shell: bash
+        run: |
+          set -euxo pipefail
+          pwd
+          node -v
+          npm -v
+          ls -la
+          ls -la node_modules/.bin
+          test -x ./node_modules/.bin/hexo
+          ./node_modules/.bin/hexo generate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
