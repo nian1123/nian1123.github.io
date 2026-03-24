@@ -22,29 +22,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: package-lock.json
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Install dependencies and build site
-        shell: bash
-        run: |
-          set -euxo pipefail
-          pwd
-          node -v
-          npm -v
-          npm ci
-          ls -la
-          ls -la node_modules/.bin
-          test -x ./node_modules/.bin/hexo
-          ./node_modules/.bin/hexo generate
-      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
