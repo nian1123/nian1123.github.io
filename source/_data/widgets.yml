@@ -1,3 +1,12 @@
+intro:
+  layout: markdown
+  content: |
+    这里主要记录每周见闻、技术文章与阶段性思考。
+
+    更新没有固定频率，但会尽量保持长期写作。
+
+    如果一篇文章值得保留，它就应该出现在这里。
+
 recent:
   layout: recent
   limit: 8

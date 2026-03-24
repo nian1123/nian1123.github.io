@@ -9,23 +9,23 @@ menubar:
 
 site_tree:
   home:
-    leftbar:
+    leftbar: intro, recent
     rightbar:
   index_blog:
     menu_id: post
-    leftbar:
+    leftbar: intro, recent
     rightbar:
   post:
     menu_id: post
-    leftbar:
+    leftbar: intro, recent
     rightbar: toc
   page:
-    leftbar:
+    leftbar: intro, recent
     rightbar: toc
   error_page:
     menu_id: post
     '404': /404.html
-    leftbar:
+    leftbar: intro, recent
     rightbar:
 
 article:
@@ -38,7 +38,7 @@ article:
     - weibo
 
 footer:
-  social: {}
+  social:
   sitemap: []
   content: |
     本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
