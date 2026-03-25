@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Blueberry favicon">
+  <defs>
+    <radialGradient id="berryBase" cx="30%" cy="26%" r="68%">
+      <stop offset="0" stop-color="#7384d8"/>
+      <stop offset="0.4" stop-color="#4559b5"/>
+      <stop offset="0.72" stop-color="#25357f"/>
+      <stop offset="1" stop-color="#10173f"/>
+    </radialGradient>
+    <radialGradient id="bloom" cx="34%" cy="24%" r="62%">
+      <stop offset="0" stop-color="#d9e4ff" stop-opacity=".72"/>
+      <stop offset="0.58" stop-color="#b6c5ef" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#b6c5ef" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crownGlow" cx="50%" cy="44%" r="60%">
+      <stop offset="0" stop-color="#d8e0fd"/>
+      <stop offset="1" stop-color="#8f9fe3"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="21" y1="10" x2="42" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9adf96"/>
+      <stop offset="1" stop-color="#4f8f53"/>
+    </linearGradient>
+  </defs>
+  <path d="M29 10c-4 0-7 2-9 6 6 2 11 0 14-4-1-1-3-2-5-2z" fill="url(#leaf)"/>
+  <path d="M36 10c3 0 6 2 8 6-5 1-9 0-12-4 1-1 2-2 4-2z" fill="url(#leaf)"/>
+  <circle cx="32" cy="35" r="21" fill="url(#berryBase)"/>
+  <circle cx="29" cy="29" r="15" fill="url(#bloom)"/>
+  <path d="M32 21l4 4 6-2-2 5 4 4-6 1-2 5-4-3-4 3-2-5-6-1 4-4-2-5 6 2z" fill="url(#crownGlow)"/>
+  <ellipse cx="24" cy="24" rx="7.5" ry="4.8" fill="#edf3ff" fill-opacity=".38" transform="rotate(-25 24 24)"/>
+  <ellipse cx="41" cy="44" rx="11" ry="7" fill="#0f1639" fill-opacity=".18" transform="rotate(-12 41 44)"/>
+</svg>
