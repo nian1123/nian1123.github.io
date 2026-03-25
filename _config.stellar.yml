@@ -53,3 +53,13 @@ search:
 
 comments:
   service:
+
+inject:
+  head:
+    - |
+      <style>
+        .l_body[type='tech'] article.content h2 > a:first-child:before,
+        .l_body[type='tech'] article.content h3 > a:first-child:before {
+          content: '|';
+        }
+      </style>
