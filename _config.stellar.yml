@@ -41,8 +41,8 @@ footer:
   social:
   sitemap: []
   content: |
-    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
-    内容以文章与周刊为主。
+    本站使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
+    内容以文章与周刊为主。部分内容为 AI 润色生成，请注意甄别，欢迎提建议。
 
 search:
   service: local_search
